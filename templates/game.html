@@ -1,25 +1,49 @@
 <!doctype html>
 <html>
 <head>
+  <link rel="stylesheet" href="/static/madlibs.css">
   <title>Madlib Game</title>
 </head>
 <body>
     <form action="/madlib">
       
-        Choose a person: <br>
+        Choose a person:<br>
         <input type="text" name="person">
         <br>
 
         Choose a color: <br>
-        <input type="text" name="color">
+        <input type="radio" name="color" value="red">
+        <label id="red">Red</label>
+        <br>
+        <input type="radio" name="color" value="blue">
+        <label id="blue">Blue</label>
+        <br>
+        <input type="radio" name="color" value="green">
+        <label id="green">Green</label>
+        <br>
+        <input type="radio" name="color" value="purple">
+        <label id="purple">Purple</label>
         <br>
 
         Choose a noun: <br>
-        <input type="text" name="noun">
+        <select name="noun">
+          <option value="cat">Cat</option>
+          <option value="dog">Dog</option>
+          <option value="mouse">Mouse</option>
+          <option value="rabbit">Cat</option>
+          <option value="python">Python</option>
+        </select>
         <br>
 
         Choose an adjective: <br>
         <input type="text" name="adjective">
+        <br>
+
+        Include creatures: <br>
+        <input type="checkbox" name="creatures" value="Elf">
+        <label>Elf</label>
+        <input type="checkbox" name="creatures" value="Fairy">
+        <label>Fairy</label>
 
         <br>
         <br>
